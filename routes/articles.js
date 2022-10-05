@@ -1,8 +1,7 @@
 const express = require('express')
-const router = express.Router
+const router = express.Router()
 
-router.length('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send('In articles')
 })
-
-module.exports
+module.exports = router
